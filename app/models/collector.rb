@@ -5,6 +5,13 @@ class Collector < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
+  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+
+  has_many :wines, through: :cellars
+  has_many :cellars
+
+  def add_to_cellar(wine)
+    self.wines << wine
+  end
 end

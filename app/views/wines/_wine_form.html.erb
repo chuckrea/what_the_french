@@ -1,0 +1,5 @@
+<%= form_for @wine do |f| %>
+  <%= f.label :search, "" %>
+  <%= f.text_field :search, placeholder: "Search", class: "form-control" %> <!-- to style the form -->
+  <%= f.submit nil, class:"btn btn-primary", id:"submit" %> <!-- to style the button -->
+<% end %>

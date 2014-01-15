@@ -1,0 +1,21 @@
+<h1><%= @collector.email %></h1>
+<h2><%= @region %>
+<div class="col-md-4 col-md-offset-8">
+  <form action="<%= collector_path(current_collector) %>" method="get">
+    <input type="text" name="search" placeholder="Search Snooth">
+    <input type="submit" id="submit">
+  </form>
+  <div class="col-md-4">
+    <% if @results %>
+      Search Results:
+      <%= @results %>
+    <% end %>
+  </div>
+</div>
+
+
+<% @collector.wines.each do |wine| %>
+  <h2><%= wine.to_s %></h2>
+<% end %>
+
+<%= @wine %>
