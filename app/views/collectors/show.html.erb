@@ -1,6 +1,6 @@
 <div class="show">
 <h1><%= @collector.email %></h1>
-<div class="col-md-5">
+<div class="col-md-6">
   <table class="table">
     <thead>
       <tr>
@@ -9,7 +9,7 @@
       </tr>
     </thead>
     <tbody>
-      <% @collector.wines.each do |wine| %>
+      <% @collector.wines.reverse.each do |wine| %>
       <tr>
         <td><img src="<%= wine.image_url %>" height="100px"></td>
         <td><%= wine.vintage + " " + wine.name %></td>
@@ -19,7 +19,7 @@
   </table>
 </div>
 
-<div class="col-md-6 col-md-offset-6">
+<div class="col-md-6">
   <form action="<%= collector_path(current_collector) %>" method="get">
     <input type="text" name="search" placeholder="Search Snooth">
     <input type="submit" id="submit">
