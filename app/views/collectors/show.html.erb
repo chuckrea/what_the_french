@@ -1,21 +1,57 @@
+<div class="show">
 <h1><%= @collector.email %></h1>
-<h2><%= @region %>
-<div class="col-md-4 col-md-offset-8">
+<div class="col-md-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Your cellar:</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @collector.wines.each do |wine| %>
+      <tr>
+        <td><img src="<%= wine.image_url %>" height="100px"></td>
+        <td><%= wine.vintage + " " + wine.name %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="col-md-6 col-md-offset-6">
   <form action="<%= collector_path(current_collector) %>" method="get">
     <input type="text" name="search" placeholder="Search Snooth">
     <input type="submit" id="submit">
   </form>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <% if @results %>
-      Search Results:
-      <%= @results %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Results:</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @results.each do |wine| %>
+          <tr>
+            <td><img src="<%= wine["image"] %>" height="100px"></td>
+            <td><%= wine["vintage"] + " " + wine["name"] %></td>
+            <td><form action="<%= wines_path %>" method="post">
+              <input type="hidden" name="name" value="<%= wine["name"] %>">
+              <input type="hidden" name="vintage" value="<%= wine["vintage"] %>">
+              <input type="hidden" name="varietal" value="<%= wine["varietal"] %>">
+              <input type="hidden" name="image_url" value="<%= wine["image"] %>">
+              <input type="hidden" name="winery" value="<%= wine["winery"] %>">
+              <%= token_tag form_authenticity_token %>
+              <input type="submit" value="Add To Cellar">
+              </form></td>
+          </tr>
+          <% end %>
+        </tbody>
+      <table>
     <% end %>
   </div>
 </div>
-
-
-<% @collector.wines.each do |wine| %>
-  <h2><%= wine.to_s %></h2>
-<% end %>
-
-<%= @wine %>
+</div>

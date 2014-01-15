@@ -4,15 +4,15 @@
 <h3>because wine is good</h3>
 
 <% if collector_signed_in? %>
-  <div class="col-md-4">
+  <div class="col-md-5">
     <a href="<%= collector_path(current_collector) %>" type="button" class="btn btn-success btn-block">Manage Cellar</a>
-    <a href="" type="button" class="btn btn-success btn-block">What The French?</a>
+    <a href="<%= wtf_path %>" type="button" class="btn btn-success btn-block">What The French?</a>
   </div>
 <% else %>
-  <div class="col-md-4">
+  <div class="col-md-5">
     <a href="<%= new_collector_session_path %>" type="button" class="btn btn-success btn-block">Log In</a>
     <a href="<%= new_collector_registration_path %>" type="button" class="btn btn-success btn-block">Sign Up</a>
-    <a href="" type="button" class="btn btn-success btn-block">What The French?</a>
+    <a href="<%= wtf_path %>" type="button" class="btn btn-success btn-block">What The French?</a>
   </div>
 <% end %>
 </div>

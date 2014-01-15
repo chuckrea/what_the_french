@@ -1,0 +1,17 @@
+<div class="wtf col-md-6 col-md-offset-3">
+  <h2>What The French?</h2>
+  <h3>Because there's seriously no grape listed on the label</h3>
+  <% unless @result %>
+  <form action="<%= wtf_search_path %>" method="get">
+    <input type="text" name="search" placeholder="enter weird French region or appelation name (whaaaaaa?) here.....">
+    <select class="form-control" name="color">
+      <option value="red">Red</option>
+      <option value="red">White</option>
+    </select>
+    <input type="submit" value="What The French?">
+  </form>
+  <% else %>
+    <h4><%= @result %><h4>
+  <% end %>
+
+</div>
