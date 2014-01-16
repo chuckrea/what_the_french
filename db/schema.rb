@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140114190829) do
+ActiveRecord::Schema.define(:version => 20140116010433) do
 
   create_table "cellars", :force => true do |t|
     t.integer  "collector_id"
@@ -46,8 +46,9 @@ ActiveRecord::Schema.define(:version => 20140114190829) do
     t.string   "winery"
     t.string   "varietal"
     t.string   "image_url"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "quantity",   :default => 1
   end
 
 end

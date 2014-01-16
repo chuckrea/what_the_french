@@ -11,8 +11,15 @@
     <tbody>
       <% @collector.wines.reverse.each do |wine| %>
       <tr>
+        <td><%= wine.quantity %></td>
         <td><img src="<%= wine.image_url %>" height="100px"></td>
         <td><%= wine.vintage + " " + wine.name %></td>
+      </tr>
+      <tr>
+        <td><a href="">I bought more</a>
+      </tr>
+      <tr>
+        <td><a href="">I drank some</a>
       </tr>
       <% end %>
     </tbody>

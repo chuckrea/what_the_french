@@ -9,37 +9,37 @@ module French
 
     case appelation
     when "Bordeaux", "Bordeaux Superieur"
-      "Region: Bordeaux, Grapes: #{bordeaux_grapes.join(", ")}"
+      "Don't panic.  It's just made of #{bordeaux_grapes.join(" and ")}."
     when "Margaux", "Medoc", "Pomerol", "St. Estephe", "Saint Estephe", "St Estephe", "Haut-Medoc", "Paulliac", "St. Julien", "Saint Julien", "St Julien", "Listrac", "Moulis", "Pessac-Leognan", "Fronsac", "St. Emilion", "Saint Emilion", "St Emilion", "Graves"
-      "Region: Bordeaux, Sub-Appelation: #{appelation}, Grapes: #{bordeaux_grapes.join(", ")}"
+      "Don't panic.  It's just made of #{bordeaux_grapes.join(" and ")}."
     when "Burgundy", "Bourgogne Rouge"
-      "Region: Burgundy, Grape: #{burgundy_grape}"
+      "It's just #{burgundy_grape}.  You love #{burgundy_grape}!"
     when "Cote de Nuits", "Cote De Nuits", "Marsannay", "Fixin", "Gevrey-Chambertin", "Gevrey Chambertin", "Morey-St.-Denis", "Morey St. Denis", "Morey St Denis", "Vougeot", "Chambolle-Musigny", "Vosne-Romanee", "Vosne Romanee", "Flagey-Echezeaux", "Flagey Echezeaux", "Nuits-St.-Georges", "Nuits St. Georges", "Nuits St Georges"
-      "Region: Burgundy, Sub-Appelation: Cote De Nuits, Grape: #{burgundy_grape}"
+      "It's just #{burgundy_grape}.  You love #{burgundy_grape}!"
     when "Cote De Beaune", "Savigny-les-Beaune", "Aloxe-Corton", "Chorey-les-Beaune", "Pommard", "Beaune", "St. Romain", "Volnay", "St.-Aubin", "Santenay", "Chassagne-Montrachet"
-      "Region: Burgundy, Sub-Appelation: Cote De Beaune, Grape: #{burgundy_grape}"
+      "It's just #{burgundy_grape}.  You love #{burgundy_grape}!"
     when "Cote Chalonnaise", "Rully", "Mercurey", "Givry", "Montagny"
-      "Region: Burgundy, Sub-Appelation: Cote Chalonnaise, Grape: #{burgundy_grape}"
+      "It's just #{burgundy_grape}.  You love #{burgundy_grape}!"
     when "Beaujolais", "Beaujolais-Villages", "Beaujolais Nouveau"
-      "Region: Beaujolais, Grape: Gamay (an even lighter #{burgundy_grape})"
+      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}.  Just try some."
     when "St.-Amour", "St Amour", "Julienas", "Chenas", "Moulin-a-Vent", "Fleurie", "Chiroubles", "Morgon", "Regnie", "Brouilly", "Cote de Brouilly"
-      "Region: Beaujolais, Sub-Appelation: #{appelation}, Grape: Gamay (an even lighter #{burgundy_grape})"
+      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}.  Just try some."
     when "Cote-Rotie", "Condrieu", "Chateau-Grillet", "St.-Joseph", "St Joseph", "Saint Joseph", "Hermitage", "Crozes-Hermitage", "Cornas"
-      "Region: Northern Rhone, Sub-Appelation: #{appelation}, Grape: Syrah"
+      "Lucky you. This is made from Syrah (aka Best. Grape. Ever.)"
     when "Cote-du-Rhone", "Cote Du Rhone", "Cote du Rhone", "Cote-du-Rhone-Villages", "Cote Du Rhone Villages", "Chateauneuf-du-Pape", "Chateauneuf du Pape", "Gigondas", "Vacqueyras"
-      "Region: Southern Rhone, Sub-Appelation: #{appelation}, Grapes: #{southern_rhone_grapes.join(", ")}"
+      "Ok, listen.  This is what's called a GSM blend.  GSM stands for the grapes Grenache, Syrah, and Mourvedre. But it should stand for awesome. Go get yourself some stinky cheese and put your feet up cuz you're about to have a great night."
     when "Chinon", "Bourgueil"
-      "Region: Loire Valley, Sub-Appelation: #{appelation}, Grape: Cabernet Franc"
+      "This is made from Cabernet Franc, which is a lot like Prince.  It's purple and it's really funky."
     when "Anjou", "Touraine"
-      "Region: Loire Valley, Sub-Appelation: #{appelation}, Grape: Gamay"
+      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}.  Just try some."
     when "Sancerre"
-      "Region: Loire Valley, Sub-Appelation: #{appelation}, Grape: #{burgundy_grape}"
+      "It's just #{burgundy_grape}.  You love #{burgundy_grape}!"
     when "Vin de Pays d'Oc", "Vin de Pays"
-      "Region: Languedoc-Roussillon, Sub-Appelation: #{appelation}, Grapes: #{bordeaux_grapes.join(", ")}"
+      "Don't panic.  It's just made of #{bordeaux_grapes.join(" and ")}."
     when "Corbieres", "Faugeres", "Fitou", "Minervois", "Coteau du Languedoc", "St.-Chinian"
-      "Region: Languedoc-Roussillon, Sub-Appelation: #{appelation}, Grapes: Syrah, Mourvedre, Carignan"
+      "This wine's from the South of France, where things get a little wild. Embrace it.  Cuz there's just some Syrah, Mourvedre, and Carignan up in there."
     when "Bandol"
-      "Region: Provence, Sub-Appelation: #{appelation}, Grape: Mourvedre"
+      "This is made from 100% Mourvedre and it's a big boy. Go for it. Be bold. Just for God's sake eat something with it."
     end
   end
 
@@ -88,7 +88,7 @@ module French
   end
 
   def witty
-    ["(seriously, that's a weird word)", "(they can't just call it Franzia?)", "(which also translates to 'he who has many mistresses')", "(which also translates to 'we still think Americans are dumb')"].sample
+    ["(seriously, that's a weird word)", "(they can't just call it Franzia?)", "(which also translates to 'he who has many mistresses')", "(which also translates to 'we think Americans are dumb')"].sample
   end
 
 end
