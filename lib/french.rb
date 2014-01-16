@@ -87,4 +87,8 @@ module French
     end
   end
 
+  def witty
+    ["(seriously, that's a weird word)", "(they can't just call it Franzia?)", "(which also translates to 'he who has many mistresses')", "(which also translates to 'we still think Americans are dumb')"].sample
+  end
+
 end

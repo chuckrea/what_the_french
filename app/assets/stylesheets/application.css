@@ -11,3 +11,9 @@
  *= require_self
  *= require_tree .
  */
+
+ .home {
+  border-radius: 50px;
+  padding-bottom: 25px;
+  background-color: lightgray;
+ }

@@ -4,10 +4,8 @@ class FrenchController < ApplicationController
   include French
 
   def index
- 
-  end
-
-  def search
-    @result = what_the_french(params[:search], params[:color])
+    @appelation = params[:search]
+    @result = what_the_french(@appelation, params[:color])
+    @joke = witty
   end
 end
