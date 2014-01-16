@@ -1,5 +1,7 @@
 <%= form_for @wine do |f| %>
-  <%= f.label :search, "" %>
-  <%= f.text_field :search, placeholder: "Search", class: "form-control" %> <!-- to style the form -->
-  <%= f.submit nil, class:"btn btn-primary", id:"submit" %> <!-- to style the button -->
+  <%= f.label :vintage, "", class: "wine-form-label" %>
+  <%= f.text_field :vintage, class: "wine-form form-control"%>
+  <%= f.label :name, "", class: "wine-form-label" %>
+  <%= f.text_field :name, class: "wine-form form-control"%> <!-- to style the form -->
+  <%= f.submit nil, class: "wine-form-button btn btn-default", id:"submit" %> <!-- to style the button -->
 <% end %>

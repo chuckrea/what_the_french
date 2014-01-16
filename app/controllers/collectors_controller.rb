@@ -3,7 +3,7 @@ class CollectorsController < ApplicationController
 
   def show
     @collector = current_collector
-
+  
     if params[:search]
       query = params[:search].split(" ").join("+")
       api_key = ENV["SNOOTH_KEY"]

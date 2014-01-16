@@ -9,5 +9,6 @@ WhatTheFrench::Application.routes.draw do
 
   get "/wtf", to: "french#index"
   get "/wtf/search", to: "french#search"
+  post "wines/:id/quantity", to: "wines#quantity", as: "wine_quantity"
   
 end

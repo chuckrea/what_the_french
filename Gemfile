@@ -22,6 +22,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'simplecov', :require => false, :group => :test
+
 gem 'rspec-rails'
 gem 'capybara'
 gem 'httparty'

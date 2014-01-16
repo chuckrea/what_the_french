@@ -1,24 +1,23 @@
-
+<body class="homepage">
 <div class="home col-md-7 col-md-offset-2 text-center">
-<h1>Welcome To Wine-O</h1>
-<h3>because wine is good</h3>
+<h1 style="font-family: 'Elsie', cursive; font-size: 60px;">Welcome To Wine-O</h1>
+<h5>online cellar management and label demystification</h5>
 
 <% if collector_signed_in? %>
   
-  <div class="row col-md-offset-3">
-    <div class="col-md-4">
-      <a href="<%= collector_path(current_collector) %>" type="button" class="btn btn-success btn-block">Manage Cellar</a>
-    </div>
-    <div class="col-md-4">
-      <a href="<%= wtf_path %>" type="button" class="btn btn-danger btn-block">What The French?</a>
-    </div>
+  <div class="home-buttons">
+      <a href="<%= collector_path(current_collector) %>" type="button" class="btn btn-default">Manage Cellar</a>
+    
+      <a href="<%= wtf_path %>" type="button" class="btn btn-default">What The French?</a>
   </div>
 
 <% else %>
-  
-    <a href="<%= wtf_path %>" type="button" class="btn btn-danger">What The French?</a>
+    <div class="home-buttons">
+      <a href="<%= wtf_path %>" type="button" class="btn btn-default">What The French?</a>
+    </div>
   </div>
 <% end %>
 </div>
 </div>
+</body>
 

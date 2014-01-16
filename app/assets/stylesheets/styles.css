@@ -1,0 +1,136 @@
+body.homepage { 
+
+  background: url("orangesky.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-family: 'Elsie', cursive; 
+}
+
+.home {
+  font-family: 'Elsie', cursive;
+}
+
+.home h5 {
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+div.home {
+  margin-top: -95px;
+  padding: -20px;
+}
+
+div.home a {
+  text-decoration: none;
+}
+
+div.home-buttons a {
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 5px 0 5px;
+  border-radius: 1em;
+}
+
+nav {
+  font-size: 15px;
+}
+
+.navbar-header a {
+  font-size: 20px;
+}
+
+nav.navbar {
+  background: rgba(255, 255, 255, 0.0);
+  border: 0;
+}
+
+.wtf h1, .wtf h2, .wtf h3, .wtf h4, .wtf input, .wtf select {
+  font-family: 'Candal', sans-serif;
+}
+
+.result a {
+  font-family: 'Candal', sans-serif;
+}
+
+.wtf input.form-control {
+  font-size: 13px;
+}
+
+.my-input {
+  width: 375px;
+}
+
+.result {
+  margin-top: -75px;
+}
+
+.wine-search {
+  width: 200px;
+  font-family: 'Elsie', cursive;
+  font-size: 15px;
+}
+
+.show input {
+  font-family: 'Elsie', cursive; 
+  font-size: 15px;
+}
+
+td.wine-quantity {
+  font-size: 17px;
+}
+
+td.wine-name {
+  font-size: 20px;
+}
+
+.wine-form-button {
+  margin-top: 15px;
+  font-family: 'Elsie', cursive;
+}
+
+.wine-form {
+  width: 375px;
+  font-family: 'Elsie', cursive;
+}
+
+.wine-form-label {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.devise-button {
+  padding-top: 10px;
+}
+
+/* User sign in and sign forms. */
+.border-form-div {
+  max-width: 300px;
+  padding: 0px 29px 29px 19px;
+  margin: 0 auto 20px;
+  margin-top: -70px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
