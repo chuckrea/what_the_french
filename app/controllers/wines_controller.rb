@@ -1,19 +1,33 @@
 class WinesController < ApplicationController
 
   def create
-    wine = Wine.create!(
-      name: params[:name],
-      vintage: params[:vintage],
-      varietal: params[:varietal],
-      image_url: params[:image_url],
-      winery: params[:winery]
+    unless params[:wine]
+      wine = Wine.create!(
+        name: params[:name],
+        vintage: params[:vintage],
+        varietal: params[:varietal],
+        image_url: params[:image_url],
+        winery: params[:winery]
+        )
+    else
+      wine = Wine.create!(
+      name: params[:wine][:name],
+      winery: params[:wine][:winery],
+      vintage: params[:wine][:vintage],
+      varietal: params[:wine][:varietal],
+      image_url: params[:wine][:image_url]
       )
+    end
 
     collector = current_collector
 
     collector.add_to_cellar(wine)
 
     redirect_to collector_path(collector)
+  end
+
+  def new
+    @wine = Wine.new
   end
 
   def edit

@@ -21,13 +21,13 @@ module French
     when "Cote Chalonnaise", "Rully", "Mercurey", "Givry", "Montagny"
       "It's just #{burgundy_grape}.  You love #{burgundy_grape}!"
     when "Beaujolais", "Beaujolais-Villages", "Beaujolais Nouveau"
-      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}.  Just try some."
+      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}, but lighter. The French like a billion gallons of this stuff a year."
     when "St.-Amour", "St Amour", "Julienas", "Chenas", "Moulin-a-Vent", "Fleurie", "Chiroubles", "Morgon", "Regnie", "Brouilly", "Cote de Brouilly"
-      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}.  Just try some."
+      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}, but lighter. The French like a billion gallons of this stuff a year."
     when "Cote-Rotie", "Condrieu", "Chateau-Grillet", "St.-Joseph", "St Joseph", "Saint Joseph", "Hermitage", "Crozes-Hermitage", "Cornas"
       "Lucky you. This is made from Syrah (aka Best. Grape. Ever.)"
     when "Cote-du-Rhone", "Cote Du Rhone", "Cote du Rhone", "Cote-du-Rhone-Villages", "Cote Du Rhone Villages", "Chateauneuf-du-Pape", "Chateauneuf du Pape", "Gigondas", "Vacqueyras"
-      "Ok, listen.  This is what's called a GSM blend.  GSM stands for the grapes Grenache, Syrah, and Mourvedre. But it should stand for awesome. Go get yourself some stinky cheese and put your feet up cuz you're about to have a great night."
+      "Ok, listen.  This is what's called a GSM blend.  GSM stands for the grapes Grenache, Syrah, and Mourvedre. But it should stand for awesome sauce. Go get yourself some stinky cheese and put your feet up cuz you're about to have a great night."
     when "Chinon", "Bourgueil"
       "This is made from Cabernet Franc, which is a lot like Prince.  It's purple and it's really funky."
     when "Anjou", "Touraine"
@@ -50,31 +50,31 @@ module French
 
     case appelation
     when "Bordeaux", "Bordeaux Superieur"
-      "Region: Bordeaux, Grapes: #{bordeaux_white_grapes.join(", ")}"
+      "A white Bordeaux is mostly Sauvignon Blanc.  Nothing scary 'bout that.  Unless you're afraid of deliciousness."
     when "Graves", "Pessac-Leognan", "Entre-Deux-Mers"
-      "Region: Bordeaux, Sub-Appelation: #{appelation} Grapes: #{bordeaux_white_grapes.join(", ")}"
+      "It's a white Bordeaux and it's made mostly from Sauvignon Blanc.  Nothing scary 'bout that.  Unless you're afraid of deliciousness."
     when "Sauternes"
-      "Region: Bordeaux, Sub-Appelation: #{appelation} Grape: Semillon"
+      "This is a dessert wine. It's pronounced 'saw-tare-ne' and it's one of the greatest things ever made.  Put it in your mouth."
     when "Burgundy", "Bourgogne Blanc"
-      "Region: Burgundy, Grape: #{burgundy_white_grape}"
+      "This is just Chardonnay.  You love Chardonnay!"
     when "Chablis", "Aloxe-Corton", "Meursault", "Puligny-Montrachet", "Beaune", "Chassagne-Montrachet", "Pernand-Vergelesses", "St.-Romain", "St.-Aubin", "Rully", "Mercurey", "Givry", "Montagny", "St.-Veran", "Pouilly Fuisse", "Pouilly-Fuisse"
-      "Region: Burgundy, Sub-Appelation: #{appelation} Grape: #{burgundy_white_grape}"
+      "This is just Chardonnay.  You love Chardonnay!"
     when "Condrieu", "Chateau-Grillet"
-      "Region: Northen Rhone, Appelation: #{appelation}, Grape: Viogner"
+      "Ok, this is made from this crazy grape called Viogner (vee-ohn-yay). It's super floral but sure brings some heft to the table."
     when "St.-Joseph", "Saint Joseph", "Hermitage", "Crozes-Hermitage"
-      "Region: Northen Rhone, Appelation: #{appelation}, Grapes: Marsanne, Roussane"
+      "This wine is made from a blend of two grapes that literally no one has heard of: Marsanne and Roussane.  But that doesn't mean they aren't delicious.  Root for the underdog, will ya?!?"
     when "Chateauneuf-du-Pape", "Vacqueyras"
-      "Region: Southern Rhone, Appelation: #{appelation}, Grapes: Grenache Blanc, Clairette"
+      "Made of 100% Grenache Blanc, but don't worry about that. The Pope has been drinking this wine for hundreds of years. Yup, THAT Pope."
     when "Cote-du-Rhone", "Cote-du-Rhone-Villages", "Cote du Rhone", "Cote du Rhone Villages"
-      "Region: Southern Rhone, Appelation: #{appelation}, Grapes: Grenache Blanc, Viogner, Clairette, Roussane"
+      "This wine is a blend of four really weird sounding grapes: Grenache Blanc, Viogner, Clairette, and Roussane. The good news is the more of it you drink the better your French gets."
     when "Vouvray", "Savennieres"
-      "Region: Loire Valley, Appelation: #{appelation}, Grape: Chenin Blanc"
+      "So, this is made from the Chenin Blanc grape.  Which, I know, sounds made up. It sounds like something Pepe Le Pew would say. Just try some and you won't care what its called."
     when "Sancerre", "Pouilly-Fume", "Menetou-Salon", "Reulliy", "Quincy"
-      "Region: Loire Valley, Appelation: #{appelation}, Grape: Sauvignon Blanc"
+      "This is just 100% Sauvignon Blanc but if you don't think it's the best Sav Blanc you've ever had then I say 'Good Day' to you.  I said 'GOOD DAY!'"
     when "Alsace", "Gewurztraminer", "Pinot Blanc", "Pinot Gris", "Riesling"
-      "The peoples of Alsace are benevolent, for they put the grape varietal on the label. Possibly becuase of their highly organized German heritage."
+      "The humble peoples of Alsace are benevolent, for they have wisely decided to display the grape varietal on the label. Possibly becuase of their highly pragmatic and organized German heritage."
     when "Vin de Pays d'Oc", "Coteaux du Languedoc"
-      "Region: Languedoc-Roussillon, Appelation: #{appelation}, Grape: Sauvignon Blanc, Chardonnay"
+      "That's a big, crazy French phrase that means 'I'm made of Sauvignon Blanc and Chardonnay'.  Why can't they just SAY that?!?"
     end
   end
 
@@ -88,7 +88,7 @@ module French
   end
 
   def witty
-    ["(seriously, that's a weird word)", "(they can't just call it Franzia?)", "(which also translates to 'he who has many mistresses')", "(which also translates to 'we think Americans are dumb')"].sample
+    ["(seriously, that's a weird word)", "(they can't just call it Franzia?)", "(which also translates to 'he who has many mistresses')", "(which also translates to 'we think Americans are dumb')", "(which is also French for 'we don't ALL smell like cheese!')", "(I think they just make these names up as they go)", "(why do French people even have consonants if they never use them?)", "(ok, that word is pretty cool)", "(which also translates to 'my apologies. they don't sell deodorant in my country')", "(that word is so totally made up)", "(which is also Gerard Depuardieu's middle name)", "(which coincidentally is also the French word for 'David Hasselhoff')"].sample
   end
 
 end

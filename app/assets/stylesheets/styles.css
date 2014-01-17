@@ -33,19 +33,25 @@ div.home-buttons a {
   font-size: 18px;
   background: rgba(255, 255, 255, 0.5);
   margin: 0 5px 0 5px;
-  border-radius: 1em;
+  border-radius: .5em;
 }
 
 nav {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .navbar-header a {
-  font-size: 20px;
+  font-size: 25px;
 }
+
 
 nav.navbar {
   background: rgba(255, 255, 255, 0.0);
+  border: 0;
+}
+
+.navbar-btn {
+  background: rgba(255, 255, 255, 0.2);
   border: 0;
 }
 
@@ -112,7 +118,7 @@ td.wine-name {
   max-width: 300px;
   padding: 0px 29px 29px 19px;
   margin: 0 auto 20px;
-  margin-top: -70px;
+  margin-top: -94px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 5px;
@@ -133,4 +139,12 @@ td.wine-name {
   height: auto;
   margin-bottom: 15px;
   padding: 7px 9px;
+}
+
+.new-wine-form {
+  margin-top: -50px;
+} 
+
+.add-wine-div {
+  margin-top: -68px;
 }
