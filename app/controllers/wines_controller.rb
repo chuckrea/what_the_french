@@ -48,11 +48,11 @@ class WinesController < ApplicationController
     collector = current_collector
     if params[:up]
       wine = Wine.find(params[:id])
-      wine.quantity += 1
+      wine.quantity = wine.quantity + 1
       wine.save!
     elsif params[:down]
       wine = Wine.find(params[:id])
-      wine.quantity -= 1
+      wine.quantity = wine.quantity - 1
       wine.save!
       if wine.quantity == 0
         Wine.delete(params[:id])
