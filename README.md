@@ -14,12 +14,12 @@ Details
 
 ##Screenshots
 ###Homepage
-<img src="/Users/chuckrea/Desktop/wine-o home page.png" width="500px">
+<img src="/app/assets/images/wine-o home page.png" width="500px">
 
 ###What The French? (Wine Label Translation Search)
-<img src="/Users/chuckrea/Desktop/what the french home.png" width="500px">
+<img src="/app/assets/images/what the french home.png" width="500px">
 
 ###What The French? Search Results
 
-<img src="/Users/chuckrea/Desktop/what the french result.png" width="500px">
+<img src="/app/assets/images/what the french result.png" width="500px">
 
