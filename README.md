@@ -12,3 +12,14 @@ Details
 - Fully tested with Rspec and Capybara
 - Tries not to take its subject or itself ***too*** seriously.
 
+##Screenshots
+###Homepage
+<img src="/Users/chuckrea/Desktop/wine-o home page.png" width="500px">
+
+###What The French? (Wine Label Translation Search)
+<img src="/Users/chuckrea/Desktop/what the french home.png" width="500px">
+
+###What The French? Search Results
+
+<img src="/Users/chuckrea/Desktop/what the french result.png" width="500px">
+
