@@ -3,7 +3,7 @@
 
 ## Overview
 
-**Wine-O** helps a user search for new wines and organize a home wine cellar.  It also parses French wine labels into a friendly and more easily understandable format.
+**Wine-O** is your wine cellar management and organizational tool.  It also includes the "What The French?" feature, which takes confusing French wine labels and parses them into a friendly and more easily understandable format.
 
 Details
  
