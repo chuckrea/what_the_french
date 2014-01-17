@@ -16,10 +16,16 @@ Details
 ###Homepage
 <img src="/app/assets/images/wine-o home page.png" width="700px">
 
+---
+
 ###What The French? (Wine Label Translation Search)
 <img src="/app/assets/images/what the french home.png" width="700px">
+
+---
 
 ###What The French? Search Results
 
 <img src="/app/assets/images/what the french result.png" width="700px">
+
+---
 
