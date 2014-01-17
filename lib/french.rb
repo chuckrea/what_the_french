@@ -23,7 +23,7 @@ module French
     when "Beaujolais", "Beaujolais-Villages", "Beaujolais Nouveau"
       "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}, but lighter. The French like a billion gallons of this stuff a year."
     when "St.-Amour", "St Amour", "Julienas", "Chenas", "Moulin-a-Vent", "Fleurie", "Chiroubles", "Morgon", "Regnie", "Brouilly", "Cote de Brouilly"
-      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}, but lighter. The French like a billion gallons of this stuff a year."
+      "Ok.  So it's made of this crazy grape called Gamay, which is a lot like #{burgundy_grape}, but lighter. The French drink like a billion gallons of this stuff a year."
     when "Cote-Rotie", "Condrieu", "Chateau-Grillet", "St.-Joseph", "St Joseph", "Saint Joseph", "Hermitage", "Crozes-Hermitage", "Cornas"
       "Lucky you. This is made from Syrah (aka Best. Grape. Ever.)"
     when "Cote-du-Rhone", "Cote Du Rhone", "Cote du Rhone", "Cote-du-Rhone-Villages", "Cote Du Rhone Villages", "Chateauneuf-du-Pape", "Chateauneuf du Pape", "Gigondas", "Vacqueyras"
