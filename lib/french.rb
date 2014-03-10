@@ -40,6 +40,8 @@ module French
       "This wine's from the South of France, where things get a little wild. Embrace it.  Cuz there's just some Syrah, Mourvedre, and Carignan up in there."
     when "Bandol"
       "This is made from 100% Mourvedre and it's a big boy. Go for it. Be bold. Just for God's sake eat something with it."
+    else
+      "Whoops. You might have spelled something wrong. Which is easy to do in a language that's all vowels and silent consonants. Try again."
     end
   end
 
@@ -75,6 +77,8 @@ module French
       "The humble peoples of Alsace are benevolent, for they have wisely decided to display the grape varietal on the label. Possibly becuase of their highly pragmatic and organized German heritage."
     when "Vin de Pays d'Oc", "Coteaux du Languedoc"
       "That's a big, crazy French phrase that means 'I'm made of Sauvignon Blanc and Chardonnay'.  Why can't they just SAY that?!?"
+    else
+      "Whoops. You might have spelled something wrong. Which is easy to do in a language that's all vowels and silent consonants. Try again."
     end
   end
 
