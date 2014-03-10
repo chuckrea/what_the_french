@@ -14,21 +14,21 @@ Details
 
 ##Screenshots
 ###Homepage
-<img src="/app/assets/images/wine-o home page.png" width="700px">
+<img src="/app/assets/images/wine-o_home_page.png" width="700px">
 
 ---
 
 ###What The French? (Wine Label Translation Search)
 
 ---
-<img src="/app/assets/images/what the french home.png" width="700px">
+<img src="/app/assets/images/what_the_french_home.png" width="700px">
 
 ---
 
 ###What The French? Search Results
 
 ---
-<img src="/app/assets/images/what the french result.png" width="700px">
+<img src="/app/assets/images/what_the_french_result.png" width="700px">
 
 ---
 
